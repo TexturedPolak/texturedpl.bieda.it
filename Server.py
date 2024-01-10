@@ -197,9 +197,9 @@ def checkFreshMessages():
 
 
 # Redirect to app from root domain
-@app.route('/', "GET")
-def routeToApp():
-    redirect('/app')
+#@app.route('/', "GET")
+#def routeToApp():
+#    redirect('/app')
 
 
 @app.route('/views/script.js')
@@ -209,6 +209,29 @@ def giveScript():
     file.close()
     return content
 
+#Dodanie logo
+@app.route('/img/logo.png')
+def giveLogo():
+    file = open('img/logo.png',"rb")
+    content = file.read()
+    file.close()
+    return content
+
+#Dodanie logo
+@app.route('/img/nothing.png')
+def giveLogo():
+    file = open('img/nothing.png',"rb")
+    content = file.read()
+    file.close()
+    return content
+
+#Strona główna
+@app.route('/', method='GET')
+def doRegisterSite():
+    title = "Witaj na stronie głównej! :)"
+    content=open("html/home.html","r").read()
+    subpage={"title":title,"content":content}
+    return template('index.tpl', subpage)
 
 # Run this :)
-run(app, host='localhost', port=8080)
+run(app, host='localhost', port=8080, reloader=True)
