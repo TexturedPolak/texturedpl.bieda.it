@@ -1,17 +1,17 @@
 # TexturedComunicator
-![GitHub](https://img.shields.io/github/license/TexturedPolak/texturedComunicatorWeb)
-![GitHub Repo stars](https://img.shields.io/github/stars/TexturedPolak/texturedComunicatorWeb)
-![GitHub issues](https://img.shields.io/github/issues/TexturedPolak/texturedComunicatorWeb)
+![GitHub](https://img.shields.io/github/license/TexturedPolak/texturedpl.bieda.it)
+![GitHub Repo stars](https://img.shields.io/github/stars/TexturedPolak/texturedpl.bieda.it)
+![GitHub issues](https://img.shields.io/github/issues/TexturedPolak/texturedpl.bieda.it)
 
 ## About
-That's simple (very simple) comunicator to send text messages. It's writen in python and using Bottle library.<br> TexturedComunicator have hosted instance on <a href="https://chat.texturedpolak.xyz">https://chat.texturedpolak.xyz</a> .
+That's simple (very simple) website with comunicator to send text messages. It's writen in python and using Bottle library.<br> TexturedComunicator have hosted instance on <a href="https://texturedpl.bieda.it">https://texturedpl.bieda.it/app</a> .
 ## Hosted instance details
 Hosted instance is protected with end-to-end TLS encryption and is protected with Cloudflare.
 ## API reference
 ## USE API WITH MIND on hosted instance
 ### URL
 For all requests is one URL:
-* for hosted instance: <a href="https://chat.texturedpolak.xyz/api">https://chat.texturedpolak.xyz/api</a>
+* for hosted instance: <a href="https://texturedpl.bieda.it/api">https://texturedpl.bieda.it/api</a>
 * for self-hosted: your_ip_or_domain/api
 ### Check new messages
 METHOD: **POST**<br>
