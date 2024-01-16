@@ -1,4 +1,4 @@
-# TexturedComunicator
+# texturedpl.bieda.it
 ![GitHub](https://img.shields.io/github/license/TexturedPolak/texturedpl.bieda.it)
 ![GitHub Repo stars](https://img.shields.io/github/stars/TexturedPolak/texturedpl.bieda.it)
 ![GitHub issues](https://img.shields.io/github/issues/TexturedPolak/texturedpl.bieda.it)
