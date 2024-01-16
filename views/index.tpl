@@ -168,6 +168,14 @@
         h1{
             text-align: center;
         }
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        td{ 
+            border: 1px solid white; 
+        }
     </style>
 </head>
 <body>
@@ -175,7 +183,7 @@
 		<!-- Górny pasek z napisem "TexturedPolak" -->
 		<div class="header">
 			<div class="logo">
-				<img src="img/logo.png" style="float: left; border-radius: 50%; margin-right: 15px;"/>
+				<img src="/img/logo.png" style="float: left; border-radius: 50%; margin-right: 15px;"/>
 				Textured<span style="color: #c34f4f">Polak</span>
 				<div style="clear:both;"></div>
 			</div>
@@ -183,22 +191,18 @@
 		<!-- Pasek Nawigacyjny -->
 		<div class="nav">
 			<ol>
-				<li><a href="#">Strona główna</a>
+				<li><a href="/">Strona główna</a>
 					<ul>
-						<li><a href="#">O mnie</a></li>
+						<li><a href="/o-mnie">O mnie</a></li>
 					</ul>
 				</li>
 				<li>Technik informatyk
 					<ul>
-						<li><a href="#">Sieci komputerowe</a></li>
+						<li><a href="/sk/skretka">Sieci komputerowe</a></li>
 						<li><a href="#">Systemy operacyjne</a></li>
 					</ul>
 				</li>
-			<li>Linux po godzinach
-					<ul>
-						<li><a href="#">O moim setupie</a></li>
-						<li><a href="#">O mojej nauce</a></li>
-					</ul>
+			    <li><a href="/linux/start">Linux po godzinach</a>
 				</li>
 				<li>Programowanie
 					<ul>
@@ -208,7 +212,8 @@
 				</li>
                 <li>Przechwałki :)
 					<ul>
-						<li><a href="#">Własny komunikator</a></li>
+						<li><a href="/app">Własny komunikator</a></li>
+                        <li><a href="/files">Chmurka :)</a></li>
 					</ul>
 				</li>
 				<li><a href="https://github.com/TexturedPolak">Github</a></li>

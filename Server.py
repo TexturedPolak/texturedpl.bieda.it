@@ -29,6 +29,7 @@ redisClient = redis.Redis(host=redisHost, port=40434, db=0,
 # app.wsgi = fix_environ_middleware(app.wsgi)
 # for none reverse proxy
 app = Bottle()
+
 conn = sqlite3.connect('baza.sqlite')
 c = conn.cursor()
 
@@ -230,6 +231,30 @@ def giveLogo():
 def doRegisterSite():
     title = "Witaj na stronie głównej! :)"
     content=open("html/home.html","r").read()
+    subpage={"title":title,"content":content}
+    return template('index.tpl', subpage)
+
+#O mnie
+@app.route('/o-mnie', method='GET')
+def doRegisterSite():
+    title = "O mnie :)"
+    content=open("html/o-mnie.html","r").read()
+    subpage={"title":title,"content":content}
+    return template('index.tpl', subpage)
+
+#Linux na start
+@app.route('/linux/start', method='GET')
+def doRegisterSite():
+    title = "Od czego zacząć ._."
+    content=open("html/linux/start.html","r").read()
+    subpage={"title":title,"content":content}
+    return template('index.tpl', subpage)
+
+#Skrętka
+@app.route('/sk/skretka', method='GET')
+def doRegisterSite():
+    title = "Ile tu kolorów :P"
+    content=open("html/sk/skretka.html","r").read()
     subpage={"title":title,"content":content}
     return template('index.tpl', subpage)
 
